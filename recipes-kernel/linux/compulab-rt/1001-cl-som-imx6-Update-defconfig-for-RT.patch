@@ -1,0 +1,26 @@
+From e21d08b70ce882e46340ddb88823389eb6832b94 Mon Sep 17 00:00:00 2001
+From: Valentin Raevsky <valentin@compulab.co.il>
+Date: Tue, 10 Apr 2018 22:18:14 +0300
+Subject: [PATCH 1001/1001] cl-som-imx6: Update defconfig for RT
+
+Signed-off-by: Valentin Raevsky <valentin@compulab.co.il>
+---
+ arch/arm/configs/cl_som_imx6_defconfig | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/arch/arm/configs/cl_som_imx6_defconfig b/arch/arm/configs/cl_som_imx6_defconfig
+index 0797e27..17ab92b 100644
+--- a/arch/arm/configs/cl_som_imx6_defconfig
++++ b/arch/arm/configs/cl_som_imx6_defconfig
+@@ -36,7 +36,7 @@ CONFIG_PCI=y
+ CONFIG_PCI_IMX6=y
+ CONFIG_SMP=y
+ CONFIG_VMSPLIT_2G=y
+-CONFIG_PREEMPT=y
++CONFIG_PREEMPT_RT_FULL=y
+ CONFIG_AEABI=y
+ CONFIG_HIGHMEM=y
+ CONFIG_CMA=y
+-- 
+1.9.1
+
